@@ -1,0 +1,90 @@
+import {StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000000',
+    position: 'relative',
+  },
+  topPart: {
+    flex: 1,
+  },
+  logo: {
+    position: 'absolute',
+    width: '8%',
+    height: '5%',
+    top: '3%',
+    left: '85%',
+  },
+  TtextContainer: {
+    width: '70%',
+    marginTop: '18%',
+    top: '2%',
+    left: '5%',
+  },
+  welcomeText: {
+    color: '#fff',
+    fontSize: 24
+  },
+  paraText: {
+    color: '#fff',
+    lineHeight: 25,
+    marginTop: 15,
+    fontSize: 17
+  },
+  formContainer: {
+    position: 'absolute',
+    flex: 2,
+    backgroundColor: '#ffffff',
+    width: '100%',
+    height: '100%',
+    borderTopLeftRadius: 35,
+    borderTopRightRadius: 35,
+    top: '28%',
+    alignItems: 'center',
+  },
+  loginForm: {
+    marginTop: '8%',
+    paddingHorizontal: 30,
+  },
+  formField: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: '5%',
+  },
+  textInput: {
+    width: '100%',
+    height: 60,
+    paddingLeft: 10,
+    fontSize: 18,
+    borderRadius: 2,
+    color: '#000',
+    shadowColor: '#000',
+    // shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.2,
+    elevation: 2,
+  },
+  icon: {
+    position: 'absolute',
+    left: '90%',
+  },
+  forgotPassword: {
+    alignItems: 'flex-end',
+    marginTop: '5%'
+  },
+  linkableText: {
+      color: '#36A9E1',
+      fontWeight: '600',
+      fontSize: 16,
+  },
+  normalText: {
+      color: '#000',
+      marginRight: 5
+  },
+  bottomtext: {
+      flexDirection: 'row',
+      marginTop: '20%'
+  }
+});
+
+export default styles;
