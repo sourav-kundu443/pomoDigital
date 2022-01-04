@@ -5,7 +5,7 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-  ScrollView
+  ScrollView,
 } from 'react-native';
 import styles from './style';
 import User from '../../assets/images/user.png';
@@ -19,7 +19,6 @@ import CountryIcon from '../../assets/images/flagIcon.png';
 import CityIcon from '../../assets/images/cityIcon.png';
 
 import CustomButton from '../../components/CustomButton';
-
 
 const SignUpScreen = ({navigation}) => {
   return (
@@ -61,8 +60,9 @@ const SignUpScreen = ({navigation}) => {
             <TextInput placeholder="City" style={styles.textInput} />
             <Image source={CityIcon} style={styles.icon} />
           </View> */}
-          <TouchableOpacity onPress={() => navigation.navigate('VerificationScreen')}>
-          <CustomButton title="Continue" color="#F17400" />
+          <TouchableOpacity
+            onPress={() => navigation.navigate('VerificationScreen')}>
+            <CustomButton title="Continue" color="#F17400" />
           </TouchableOpacity>
         </View>
       </View>

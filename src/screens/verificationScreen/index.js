@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import styles from './styles';
 
 import Logo from '../../assets/images/logo.png';
 import UserIcon2 from '../../assets/images/userIcon2.png';
 
-const VerificationScreen = () => {
+import CustomButton from '../../components/CustomButton';
+
+const VerificationScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -18,7 +20,18 @@ const VerificationScreen = () => {
         <View style={styles.userContainer}>
           <Image source={UserIcon2} />
         </View>
-        <Text>Your user verification is under process</Text>
+        <Text style={styles.footerText}>
+          Your user verification is under process
+        </Text>
+        <TouchableOpacity
+          style={styles.btnView}
+          onPress={() => navigation.navigate('HomeScreen')}>
+          <CustomButton
+            color="#F17400"
+            title="Go to Homepage"
+            style={styles.btnToHome}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   );
