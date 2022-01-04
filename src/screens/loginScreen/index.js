@@ -38,7 +38,7 @@ const SignUpScreen = ({navigation}) => {
             <TextInput placeholder="Password" style={styles.textInput} />
             <Image source={EmailIcon} style={styles.icon} />
           </View>
-          <TouchableOpacity style={styles.forgotPassword}>
+          <TouchableOpacity style={styles.forgotPassword} onPress={() => navigation.navigate('OTPScreen')}>
             <Text style={styles.linkableText}>Forgot Password?</Text>
           </TouchableOpacity>
 
