@@ -31,6 +31,15 @@ const styles = StyleSheet.create({
   ButtonContainer: {
     elevation: 8,
     borderRadius: 5,
+    
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.39,
+    shadowRadius: 8.3,
+    elevation: 13,
   },
   ButtonText: {
     fontSize: 18,

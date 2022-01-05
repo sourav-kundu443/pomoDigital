@@ -3,46 +3,31 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#000',
     position: 'relative',
   },
-  topPart: {
-    flex: 1,
-  },
-  logo: {
+  constructionImage: {
     position: 'absolute',
-    width: '8%',
-    height: '5%',
-    top: '3%',
-    left: '85%',
+    alignSelf: 'center',
+    top: '4%',
   },
-  userImageContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '18%',
-  },
-  formContainer: {
-    position: 'absolute',
-    flex: 2,
-    backgroundColor: '#ffffff',
+  footer: {
     width: '100%',
+    top: '15%',
+    backgroundColor: '#fff',
     height: '100%',
-    borderTopLeftRadius: 35,
-    borderTopRightRadius: 35,
-    top: '28%',
-    alignItems: 'center',
+    borderTopStartRadius: 25,
+    borderTopEndRadius: 25,
+    paddingHorizontal: '5%',
   },
-  signUpText: {
-    marginTop: '10%',
+  heading: {
+    fontSize: 24,
+    color: '#191919',
     fontWeight: 'bold',
-    fontSize: 26,
-    lineHeight: 30,
-    color: '#000000',
     letterSpacing: 1,
-    marginBottom: '6%',
-  },
-  signUpForm: {
-    paddingHorizontal: 30,
+    lineHeight: 30,
+    marginVertical: '5%',
+    paddingHorizontal: '7%'
   },
   formField: {
     flexDirection: 'row',
@@ -70,9 +55,16 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   icon: {
-    position: 'absolute',
-    left: '90%',
+    padding: 10,
+    margin: 5,
+    height: 25,
+    width: 25,
+    resizeMode: 'stretch',
+    alignItems: 'center',
   },
+  btn: {
+      marginBottom: '15%'
+  }
 });
 
 export default styles;
