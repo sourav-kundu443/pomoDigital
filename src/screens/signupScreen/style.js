@@ -73,6 +73,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: '90%',
   },
+  btn: {
+    marginBottom: '35%'
+  }
 });
 
 export default styles;

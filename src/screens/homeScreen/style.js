@@ -29,8 +29,13 @@ const styles = StyleSheet.create({
   shadow: {
     position: 'absolute',
     shadowColor: '#000',
-    shadowOffset: {width: 0, height: 5},
-    elevation: 8,
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.39,
+    shadowRadius: 8.3,
+    elevation: 13,
   },
   bannerImage: {
     top: '30%'

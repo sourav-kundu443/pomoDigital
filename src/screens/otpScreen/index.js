@@ -27,10 +27,22 @@ const OTPScreen = ({navigation}) => {
       </Text>
       <View style={styles.content}>
         <View style={styles.textInputContainer}>
+          <View style={styles.inputBox}>
+          <TextInput style={styles.textInput} keyboardType='numeric' />
+          </View>
+          <View style={styles.inputBox}>
+          <TextInput style={styles.textInput} keyboardType='numeric' />
+          </View>
+          <View style={styles.inputBox}>
+          <TextInput style={styles.textInput} keyboardType='numeric' />
+          </View>
+          <View style={styles.inputBox}>
+          <TextInput style={styles.textInput} keyboardType='numeric' />
+          </View>
+          
+          {/* <TextInput style={styles.textInput} />
           <TextInput style={styles.textInput} />
-          <TextInput style={styles.textInput} />
-          <TextInput style={styles.textInput} />
-          <TextInput style={styles.textInput} />
+          <TextInput style={styles.textInput} /> */}
         </View>
         <View style={styles.timeResend}>
           <Text style={styles.time}>Expires in 00:15</Text>

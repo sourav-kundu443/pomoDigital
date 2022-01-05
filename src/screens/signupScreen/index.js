@@ -31,46 +31,49 @@ const SignUpScreen = ({navigation}) => {
       </View>
       <View style={styles.formContainer}>
         <Text style={styles.signUpText}>Sign Up</Text>
-        <View style={styles.signUpForm}>
-          <View style={styles.formField}>
-            <TextInput placeholder="Name" style={styles.textInput} />
-            <Image source={UserIcon} style={styles.icon} />
+        <ScrollView>
+          <View style={styles.signUpForm}>
+            <View style={styles.formField}>
+              <TextInput placeholder="Name" style={styles.textInput} />
+              <Image source={UserIcon} style={styles.icon} />
+            </View>
+            <View style={styles.formField}>
+              <TextInput placeholder="Your Email" style={styles.textInput} />
+              <Image source={EmailIcon} style={styles.icon} />
+            </View>
+            <View style={styles.formField}>
+              <TextInput placeholder="Mobile No." style={styles.textInput} />
+              <Image source={MobileIcon} style={styles.icon} />
+            </View>
+            <View style={styles.formField}>
+              <TextInput placeholder="Job Title" style={styles.textInput} />
+              <Image source={JobIcon} style={styles.icon} />
+            </View>
+            <View style={styles.formField}>
+              <TextInput placeholder="Organisations" style={styles.textInput} />
+              <Image source={OrganizationIcon} style={styles.icon} />
+            </View>
+            <View style={styles.formField}>
+              <TextInput placeholder="Country" style={styles.textInput} />
+              <Image source={CountryIcon} style={styles.icon} />
+            </View>
+            <View style={styles.formField}>
+              <TextInput placeholder="City" style={styles.textInput} />
+              <Image source={CityIcon} style={styles.icon} />
+            </View>
+            <TouchableOpacity
+              style={styles.btn}
+              onPress={() => navigation.navigate('VerificationScreen')}>
+              <CustomButton
+                title="Continue"
+                color="#F17400"
+                paddingHorizontal={12}
+                marginVertical={30}
+                paddingVertical={15}
+              />
+            </TouchableOpacity>
           </View>
-          <View style={styles.formField}>
-            <TextInput placeholder="Your Email" style={styles.textInput} />
-            <Image source={EmailIcon} style={styles.icon} />
-          </View>
-          <View style={styles.formField}>
-            <TextInput placeholder="Mobile No." style={styles.textInput} />
-            <Image source={MobileIcon} style={styles.icon} />
-          </View>
-          <View style={styles.formField}>
-            <TextInput placeholder="Job Title" style={styles.textInput} />
-            <Image source={JobIcon} style={styles.icon} />
-          </View>
-          <View style={styles.formField}>
-            <TextInput placeholder="Organisations" style={styles.textInput} />
-            <Image source={OrganizationIcon} style={styles.icon} />
-          </View>
-          {/* <View style={styles.formField}>
-            <TextInput placeholder="Country" style={styles.textInput} />
-            <Image source={CountryIcon} style={styles.icon} />
-          </View>
-          <View style={styles.formField}>
-            <TextInput placeholder="City" style={styles.textInput} />
-            <Image source={CityIcon} style={styles.icon} />
-          </View> */}
-          <TouchableOpacity
-            onPress={() => navigation.navigate('VerificationScreen')}>
-            <CustomButton
-              title="Continue"
-              color="#F17400"
-              paddingHorizontal={12}
-              marginVertical={30}
-              paddingVertical={15}
-            />
-          </TouchableOpacity>
-        </View>
+        </ScrollView>
       </View>
     </View>
   );

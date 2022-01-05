@@ -50,19 +50,27 @@ const styles = StyleSheet.create({
   formField: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: '5%',
+    backgroundColor: '#fff',
+    height: 55,
+    borderRadius: 5,
+    margin: 10,
+    paddingHorizontal: 10,
+
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.39,
+    shadowRadius: 8.3,
+    elevation: 13,
   },
   textInput: {
     width: '100%',
     height: 60,
     paddingLeft: 10,
     fontSize: 18,
-    borderRadius: 2,
     color: '#000',
-    shadowColor: '#000',
-    // shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.2,
-    elevation: 2,
   },
   icon: {
     position: 'absolute',

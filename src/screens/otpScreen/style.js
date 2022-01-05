@@ -36,24 +36,31 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
+  inputBox: {
+    backgroundColor: '#fff',
+    height: 55,
+    borderRadius: 5,
+    margin: 10,
+    paddingHorizontal: 10,
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 8,
+    },
+    shadowOpacity: 0.46,
+    shadowRadius: 11.14,
+    
+    elevation: 17,
+  },
   textInput: {
-    width: 63,
-    height: 63,
-    marginHorizontal: 10,
-    marginVertical: 10,
-    borderWidth: 1,
-    borderColor: '#CCCCCC',
-    borderRadius: 4,
-    shadowColor: 'rgba(0, 0, 0, 0.20)',
-    shadowOffset: {width: 0, height: 1},
-    shadowOpacity: 0.2,
-    elevation: 1,
+    width: 45,
   },
   timeResend: {
       width: '100%',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      marginTop: '2%'
+      marginTop: '3%'
   },
   resend: {
       color: '#36A9E1',

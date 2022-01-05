@@ -34,11 +34,15 @@ const NewPassword = ({navigation}) => {
         <View style={styles.loginForm}>
           <View style={styles.formField}>
             <Text style={styles.formLabel}>New Password</Text>
-            <TextInput style={styles.textInput} />
+            <View style={styles.textInputField}>
+              <TextInput style={styles.textInput} />
+            </View>
           </View>
           <View style={styles.formField}>
             <Text style={styles.formLabel}>Confirm Password</Text>
-            <TextInput style={styles.textInput} />
+            <View style={styles.textInputField}>
+              <TextInput style={styles.textInput} />
+            </View>
           </View>
         </View>
         <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>

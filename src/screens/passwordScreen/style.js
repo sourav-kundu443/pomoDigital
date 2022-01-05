@@ -29,28 +29,35 @@ const styles = StyleSheet.create({
     marginVertical: '8%'
   },
   loginForm: {
-    paddingHorizontal: '5%'
-  },
-  formField: {
-    marginVertical: '5%',
+    paddingHorizontal: '5%',
     
   },
+  formField: { 
+    marginTop: '5%'
+  },
   formLabel: {
+    marginVertical: '3%',
     color: "#8C8C8C",
     fontSize: 16,
-    letterSpacing: 1
+    letterSpacing: 1,
+    fontWeight: '600'
+  },
+  textInputField: {
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 8,
+    },
+    shadowOpacity: 0.46,
+    shadowRadius: 11.14,
+    elevation: 17,
   },
   textInput: {
-      height: 70,
-      borderRadius: 4,
-      shadowColor: "#000",
-      shadowOffset: {
-          width: 0,
-          height: 5,
-      },
-      shadowOpacity: 0.5,
-      shadowRadius: 3,
-      elevation: 3,
+      height: 40,
+      borderRadius: 5,
       marginVertical: '4%',
   },
 });
