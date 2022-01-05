@@ -62,7 +62,13 @@ const SignUpScreen = ({navigation}) => {
           </View> */}
           <TouchableOpacity
             onPress={() => navigation.navigate('VerificationScreen')}>
-            <CustomButton title="Continue" color="#F17400" />
+            <CustomButton
+              title="Continue"
+              color="#F17400"
+              paddingHorizontal={12}
+              marginVertical={30}
+              paddingVertical={15}
+            />
           </TouchableOpacity>
         </View>
       </View>

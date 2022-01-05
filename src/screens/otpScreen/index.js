@@ -2,13 +2,16 @@ import React from 'react';
 import {View, Text, Image, TouchableOpacity, TextInput} from 'react-native';
 import styles from './style';
 
+import CustomButton from '../../components/CustomButton';
+import Header from '../../components/Header';
+
 import BackButton from '../../assets/images/icon/backIcon.png';
 import Logo from '../../assets/images/logoBW.png';
-import CustomButton from '../../components/CustomButton';
 
 const OTPScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
+      {/* <Header navigation={navigation} screenName='LoginScreen' /> */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
           <Image
@@ -19,7 +22,9 @@ const OTPScreen = ({navigation}) => {
         </TouchableOpacity>
         <Image source={Logo} resizeMode="contain" style={styles.logo} />
       </View>
-      <Text style={styles.message}>Please enter the OTP sent to your registered mobile number</Text>
+      <Text style={styles.message}>
+        Please enter the OTP sent to your registered mobile number
+      </Text>
       <View style={styles.content}>
         <View style={styles.textInputContainer}>
           <TextInput style={styles.textInput} />
@@ -33,8 +38,14 @@ const OTPScreen = ({navigation}) => {
             <Text style={styles.resend}>Resend OTP</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity>
-          <CustomButton color="#F17400" title="Continue" />
+        <TouchableOpacity onPress={() => navigation.navigate('NewPassword')}>
+          <CustomButton
+            color="#F17400"
+            title="Continue"
+            paddingHorizontal={12}
+            marginVertical={30}
+            paddingVertical={15}
+          />
         </TouchableOpacity>
       </View>
     </View>

@@ -8,14 +8,12 @@ import {
   ScrollView,
 } from 'react-native';
 import styles from './style';
-import User from '../../assets/images/user.png';
 import Logo from '../../assets/images/logo.png';
-import UserIcon from '../../assets/images/userIcon.png';
 import EmailIcon from '../../assets/images/emailIcon.png';
 
 import CustomButton from '../../components/CustomButton';
 
-const SignUpScreen = ({navigation}) => {
+const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.topPart}>
@@ -38,11 +36,19 @@ const SignUpScreen = ({navigation}) => {
             <TextInput placeholder="Password" style={styles.textInput} />
             <Image source={EmailIcon} style={styles.icon} />
           </View>
-          <TouchableOpacity style={styles.forgotPassword} onPress={() => navigation.navigate('OTPScreen')}>
+          <TouchableOpacity
+            style={styles.forgotPassword}
+            onPress={() => navigation.navigate('OTPScreen')}>
             <Text style={styles.linkableText}>Forgot Password?</Text>
           </TouchableOpacity>
 
-          <CustomButton title="Login" color="#F17400" />
+          <CustomButton
+            title="Login"
+            color="#F17400"
+            paddingHorizontal={12}
+            marginVertical={30}
+            paddingVertical={15}
+          />
         </View>
         <View style={styles.bottomtext}>
           <Text style={styles.normalText}>Don’t have an account?</Text>
@@ -55,4 +61,4 @@ const SignUpScreen = ({navigation}) => {
   );
 };
 
-export default SignUpScreen;
+export default LoginScreen;

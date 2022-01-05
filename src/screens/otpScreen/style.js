@@ -3,8 +3,7 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    
+    backgroundColor: '#fff',  
   },
   header: {
     flexDirection: 'row',
@@ -12,14 +11,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: '7%',
     alignItems: 'center',
     maxHeight: '10%',
-    marginTop: '3%'
+    marginTop: '8%'
   },
   logo: {
     width: '12%',
   },
   backIcon: {
-    width: 30,
-    height: 30,
+    width: 25,
+    height: 25,
   },
   message: {
     color: '#000',

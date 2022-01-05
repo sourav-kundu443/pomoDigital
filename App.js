@@ -11,6 +11,7 @@ import VerificationScreen from './src/screens/verificationScreen';
 import HomeScreen from './src/screens/homeScreen';
 import OTPScreen from './src/screens/otpScreen';
 import NewPassword from './src/screens/passwordScreen';
+import NewProject from './src/screens/newProjectScreen';
 
 const Stack = createStackNavigator();
 
@@ -68,6 +69,11 @@ const App = () => {
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="NewProject"
+          component={NewProject}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

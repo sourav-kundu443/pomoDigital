@@ -30,6 +30,9 @@ const VerificationScreen = ({navigation}) => {
             color="#F17400"
             title="Go to Homepage"
             style={styles.btnToHome}
+            paddingHorizontal={12}
+            marginVertical={30}
+            paddingVertical={15}
           />
         </TouchableOpacity>
       </View>
