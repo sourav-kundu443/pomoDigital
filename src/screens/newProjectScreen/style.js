@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
     borderTopStartRadius: 25,
     borderTopEndRadius: 25,
     paddingHorizontal: '5%',
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
   },
   heading: {
     fontSize: 24,
@@ -26,7 +28,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing: 1,
     lineHeight: 30,
-    marginVertical: '5%',
+    marginTop: '8%',
+    marginBottom: '4%',
     paddingHorizontal: '7%'
   },
   formField: {
@@ -63,7 +66,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   btn: {
-      marginBottom: '15%'
+      marginBottom: '20%'
   }
 });
 

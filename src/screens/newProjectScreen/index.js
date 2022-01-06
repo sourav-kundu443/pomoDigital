@@ -13,7 +13,7 @@ import PTimeIcon from '../../assets/images/icon/p_icon_5.png';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import CustomButton from '../../components/CustomButton';
 
-const NewProject = () => {
+const NewProject = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Header />
@@ -55,7 +55,10 @@ const NewProject = () => {
               style={styles.textInput}
             />
           </View>
-          <TouchableOpacity style={styles.btn}>
+          <TouchableOpacity
+            style={styles.btn}
+            onPress={() => navigation.navigate('HomeDashboard')}
+            >
             <CustomButton
               title="Continue"
               color="#F17400"

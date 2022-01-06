@@ -74,7 +74,9 @@ const styles = StyleSheet.create({
   project: {
     flex: 1,
     height: 100,
-    marginVertical: '5%'
+    marginVertical: '5%',
+
+    // borderWidth: 1
   },
   projectImage: {
     width: 75,
