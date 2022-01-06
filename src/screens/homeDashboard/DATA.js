@@ -9,7 +9,7 @@ const DATA = [
       id: 2,
       image: require('../../assets/images/icon/timelineIcon.png'),
       text: 'Timeline',
-      name: 'TimeLine'
+      name: 'Timeline'
     },
     {
       id: 3,

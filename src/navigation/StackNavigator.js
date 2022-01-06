@@ -13,6 +13,8 @@ import NewPassword from '../screens/passwordScreen';
 import NewProject from '../screens/newProjectScreen';
 import HomeDashboard from '../screens/homeDashboard';
 import ProjectInformation from '../screens/projectInformation';
+import ProjectTimeline from '../screens/timeline';
+import Contacts from '../screens/contacts';
 
 
 const Stack = createStackNavigator();
@@ -68,6 +70,16 @@ const StackNavigator = () => {
         <Stack.Screen
           name="ProjectInformation"
           component={ProjectInformation}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Timeline"
+          component={ProjectTimeline}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Contacts"
+          component={Contacts}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
