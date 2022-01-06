@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 
-import BackButton from '../assets/images/icon/backIcon.png';
+import BackButton from '../assets/images/icon/backIconBW.png';
 import Logo from '../assets/images/logoBW.png';
 
 const Header = ({navigation, screenName}) => {
@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: '7%',
         alignItems: 'center',
         maxHeight: '10%',
         marginTop: '8%'

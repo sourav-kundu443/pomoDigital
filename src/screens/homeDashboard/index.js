@@ -1,5 +1,12 @@
 import React from 'react';
-import {Image, Text, View, FlatList, TouchableOpacity, ScrollView} from 'react-native';
+import {
+  Image,
+  Text,
+  View,
+  FlatList,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import styles from './style';
 
 import Header from '../../components/Header';
@@ -11,27 +18,29 @@ import DATA from './DATA';
 
 const numColumns = 3;
 
-const HomeDashboard = () => {
-    const formatData = (DATA, numColumns) => {
-        const totalRows = Math.floor(DATA.length / numColumns)
-        let totalLastRows = DATA.length - (totalRows * numColumns)
+const HomeDashboard = ({navigation}) => {
+  const formatData = (DATA, numColumns) => {
+    const totalRows = Math.floor(DATA.length / numColumns);
+    let totalLastRows = DATA.length - totalRows * numColumns;
 
-        while(totalLastRows !== 0 && totalLastRows !== numColumns) {
-            DATA.push({text: 'blank', blank: true})
-            totalLastRows++
-        }
-
-        return DATA;
+    while (totalLastRows !== 0 && totalLastRows !== numColumns) {
+      DATA.push({text: 'blank', blank: true});
+      totalLastRows++;
     }
 
+    return DATA;
+  };
+
   const renderItem = ({item}) => {
-      let {card, itemInvisible} = styles;
-      if(item.blank) {
-          return <View style={itemInvisible} />
-      }
+    let {card, itemInvisible} = styles;
+    if (item.blank) {
+      return <View style={itemInvisible} />;
+    }
     return (
       <View style={styles.card}>
-        <TouchableOpacity style={{alignItems: 'center'}}>
+        <TouchableOpacity
+          style={{alignItems: 'center'}}
+          onPress={() => navigation.navigate(item.name)}>
           <Image
             source={item.image}
             style={styles.cardIcon}
@@ -51,15 +60,15 @@ const HomeDashboard = () => {
       </View>
       <View style={styles.footer}>
         <Text style={styles.text}>Projects</Text>
-        <ScrollView style={styles.cardContainer}>
+        <View style={styles.cardContainer}>
           <FlatList
             data={formatData(DATA, numColumns)}
             renderItem={renderItem}
-            contentContainerStyle={{justifyContent: 'center',}}
+            // contentContainerStyle={{justifyContent: 'center', flexGrow: 1}}
             numColumns={numColumns}
             keyExtractor={(item, index) => index}
           />
-        </ScrollView>
+        </View>
       </View>
     </View>
   );

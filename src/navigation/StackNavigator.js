@@ -12,6 +12,7 @@ import OTPScreen from '../screens/otpScreen';
 import NewPassword from '../screens/passwordScreen';
 import NewProject from '../screens/newProjectScreen';
 import HomeDashboard from '../screens/homeDashboard';
+import ProjectInformation from '../screens/projectInformation';
 
 
 const Stack = createStackNavigator();
@@ -62,6 +63,11 @@ const StackNavigator = () => {
         <Stack.Screen
           name="HomeDashboard"
           component={HomeDashboard}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ProjectInformation"
+          component={ProjectInformation}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

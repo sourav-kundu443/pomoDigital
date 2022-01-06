@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 24,
     color: '#191919',
-    fontWeight: 'bold',
+    fontWeight: '700',
     letterSpacing: 1,
     lineHeight: 30,
     marginTop: '8%',
