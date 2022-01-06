@@ -33,12 +33,14 @@ const styles = StyleSheet.create({
         letterSpacing: 1
     },
     cardContainer: {
+        width: WIDTH,
         height: '100%',
-        justifyContent: 'center',
+        // justifyContent: 'center',
         marginVertical: '5%',
         paddingHorizontal: '3%'
     },
     card: {
+        // flex: 1,
         height:120,
         width:"30%",
         flexDirection:'column',
@@ -52,7 +54,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 6,
         marginVertical: '3%',
-        marginHorizontal: '2%'
+        marginHorizontal: '1.5%'
     },
     cardText: {
         textAlign: 'center',
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
     },
     itemInvisible: {
         backgroundColor: 'transparent'
-    }
+    },
 })
 
 export default styles;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Text, View, FlatList, TouchableOpacity} from 'react-native';
+import {Image, Text, View, FlatList, TouchableOpacity, ScrollView} from 'react-native';
 import styles from './style';
 
 import Header from '../../components/Header';
@@ -51,14 +51,15 @@ const HomeDashboard = () => {
       </View>
       <View style={styles.footer}>
         <Text style={styles.text}>Projects</Text>
-        <View style={styles.cardContainer}>
+        <ScrollView style={styles.cardContainer}>
           <FlatList
             data={formatData(DATA, numColumns)}
             renderItem={renderItem}
+            contentContainerStyle={{justifyContent: 'center',}}
             numColumns={numColumns}
             keyExtractor={(item, index) => index}
           />
-        </View>
+        </ScrollView>
       </View>
     </View>
   );
