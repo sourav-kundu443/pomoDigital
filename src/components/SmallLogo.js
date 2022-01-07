@@ -12,10 +12,11 @@ const SmallLogo = () => {
 };
 
 const styles = StyleSheet.create({
+  
   logo: {
-    width: '12%',
-    height: '70%',
-    bottom: '20%'
+    position: 'absolute',
+
+
   },
 });
 

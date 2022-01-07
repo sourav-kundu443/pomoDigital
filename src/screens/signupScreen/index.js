@@ -19,12 +19,13 @@ import CountryIcon from '../../assets/images/flagIcon.png';
 import CityIcon from '../../assets/images/cityIcon.png';
 
 import CustomButton from '../../components/CustomButton';
-
+import Header from '../../components/Header';
+  
 const SignUpScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.topPart}>
-        <Image source={Logo} style={styles.logo} />
+        <Header />
         <View style={styles.userImageContainer}>
           <Image source={User} resizeMode="cover" style={styles.userImage} />
         </View>

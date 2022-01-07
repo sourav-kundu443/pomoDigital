@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         maxHeight: '10%',
-        marginTop: '8%'
+        marginTop: '8%',
+        paddingHorizontal: '6%'
       },
       logo: {
         width: '12%',

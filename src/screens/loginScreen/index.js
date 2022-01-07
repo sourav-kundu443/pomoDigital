@@ -8,16 +8,16 @@ import {
   ScrollView,
 } from 'react-native';
 import styles from './style';
-import Logo from '../../assets/images/logo.png';
 import EmailIcon from '../../assets/images/emailIcon.png';
 
 import CustomButton from '../../components/CustomButton';
+import Header from '../../components/Header';
 
 const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.topPart}>
-        <Image source={Logo} style={styles.logo} />
+        <Header />
         <View style={styles.TtextContainer}>
           <Text style={styles.welcomeText}>Welcome to Demo!</Text>
           <Text style={styles.paraText}>

@@ -18,8 +18,6 @@ const styles = StyleSheet.create({
   },
   TtextContainer: {
     width: '70%',
-    marginTop: '18%',
-    top: '2%',
     left: '5%',
   },
   welcomeText: {
@@ -42,10 +40,11 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 35,
     top: '28%',
     alignItems: 'center',
+    paddingHorizontal: '10%'
   },
   loginForm: {
     marginTop: '8%',
-    paddingHorizontal: 30,
+    // paddingHorizontal: '10%',
   },
   formField: {
     flexDirection: 'row',
@@ -53,7 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     height: 55,
     borderRadius: 5,
-    margin: 10,
+    marginVertical: 10,
     paddingHorizontal: 10,
 
     shadowColor: '#000',
@@ -67,7 +66,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     width: '100%',
-    height: 60,
+    paddingRight: 50,
     paddingLeft: 10,
     fontSize: 18,
     color: '#000',
@@ -93,6 +92,6 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       marginTop: '20%'
   }
-});
+})
 
 export default styles;

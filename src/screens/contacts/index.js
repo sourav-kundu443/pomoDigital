@@ -1,8 +1,10 @@
-import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, Image, TouchableOpacity, Button} from 'react-native';
+
 import styles from './style';
 
 import Header from '../../components/Header';
+// import DisciplineModal from '../../components/DisciplineModal';
 
 import Imageg from '../../assets/images/img4.png';
 import OrganizationIcon from '../../assets/images/icon/building.png';
@@ -12,12 +14,18 @@ import DisciplineIcon from '../../assets/images/icon/discipline.png';
 import DownArrowIcon from '../../assets/images/icon/down_arrow.png';
 
 const Contacts = () => {
+  const [isModalVisible, setModalVisible] = useState(true);
+
+  const toggleModal = () => {
+    setModalVisible(!isModalVisible);
+  };
   return (
     <View style={styles.container}>
       <Header />
       <Image source={Imageg} style={styles.image} resizeMode="contain" />
       <View style={styles.footer}>
         <Text style={styles.footerTitle}>Contact</Text>
+
         <View>
           <View style={styles.formField}>
             <Image source={OrganizationIcon} style={styles.icon} />
@@ -47,8 +55,13 @@ const Contacts = () => {
             <Image source={DisciplineIcon} style={styles.icon} />
             <View style={styles.discipline}>
               <Text style={styles.textTitle}>Discipline:</Text>
-              <TouchableOpacity>
-                <Image source={DownArrowIcon} resizeMode="stretch" />
+
+              <TouchableOpacity onPress={toggleModal}>
+                <Image
+                  source={DownArrowIcon}
+                  style={styles.downArrowIcon}
+                  resizeMode="stretch"
+                />
               </TouchableOpacity>
             </View>
           </View>

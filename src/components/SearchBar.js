@@ -27,11 +27,12 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   textInput: {
-    placeholderTextColor: '#F5F5F5',
+   color: '#f5f5f5',
     fontSize: 16,
+    paddingRight: '20%'
   },
   SearchIconStyle: {
-    height: 15,
+    height: 13,
     marginLeft: '7%',
     marginRight: '3%'
   }

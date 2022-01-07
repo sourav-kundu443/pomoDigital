@@ -78,6 +78,10 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between'
+    },
+    downArrowIcon: {
+      height: WIDTH/15,
+      width: WIDTH/15,
     }
 });
 

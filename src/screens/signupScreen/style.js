@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
   userImageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '18%',
   },
   formContainer: {
     position: 'absolute',
@@ -33,7 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   signUpText: {
-    marginTop: '10%',
+    marginTop: '7%',
     fontWeight: 'bold',
     fontSize: 26,
     lineHeight: 30,
