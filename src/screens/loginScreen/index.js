@@ -5,10 +5,9 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-  ScrollView,
 } from 'react-native';
 import styles from './style';
-import EmailIcon from '../../assets/images/emailIcon.png';
+import { EmailIcon} from '../../assets/images';
 
 import CustomButton from '../../components/CustomButton';
 import Header from '../../components/Header';
@@ -17,7 +16,7 @@ const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.topPart}>
-        <Header />
+        <Header screenName="SplashScreen" navigation={navigation} color='#fff' />
         <View style={styles.TtextContainer}>
           <Text style={styles.welcomeText}>Welcome to Demo!</Text>
           <Text style={styles.paraText}>

@@ -6,6 +6,8 @@ import LoginScreen from '../screens/loginScreen';
 
 import VerificationScreen from '../screens/verificationScreen';
 
+import OTPScreen from '../screens/otpScreen';
+import NewPassword from '../screens/passwordScreen';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +22,16 @@ const AuthNavigator = () => {
       <Stack.Screen
         name="SignUpScreen"
         component={SignUpScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="OTPScreen"
+        component={OTPScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="NewPassword"
+        component={NewPassword}
         options={{headerShown: false}}
       />
       <Stack.Screen

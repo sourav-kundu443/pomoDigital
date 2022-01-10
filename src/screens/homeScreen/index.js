@@ -1,6 +1,8 @@
 import React from 'react';
-import {View, Text, Image, FlatList, ScrollView} from 'react-native';
+import {View, Text, Image, FlatList, ScrollView, TouchableOpacity} from 'react-native';
 import styles from './style';
+
+import Icon from  'react-native-vector-icons/FontAwesome';
 
 import Logo from '../../assets/images/logoBW.png';
 import BurgerButton from '../../assets/images/icon/burgerIcon.png';
@@ -9,7 +11,6 @@ import ReactOne from '../../assets/images/Rectangle3.png';
 import ReactTwo from '../../assets/images/Rectangle4.png';
 
 import SearchBar from '../../components/SearchBar';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 import CustomButton from '../../components/CustomButton';
 
 import DATA from './DATA';
@@ -34,7 +35,7 @@ const HomeScreen = ({navigation}) => {
       <View style={styles.header}>
         <Image source={Logo} />
         <SearchBar />
-        <Image source={BurgerButton} style={styles.burgerButtonStyle} />
+        <Icon name='navicon' color='#fff' size={40} />
       </View>
       <View style={styles.bannerStyle}>
         <Image source={ReactOne} style={styles.ReactOne} resizeMode="contain" />
@@ -71,6 +72,7 @@ const HomeScreen = ({navigation}) => {
             renderItem={_renderItem}
             numColumns={3}
             keyExtractor={(item, index) => index}
+            
           />
         </View>
       </View>

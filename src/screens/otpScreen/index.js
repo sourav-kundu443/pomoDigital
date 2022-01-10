@@ -5,44 +5,27 @@ import styles from './style';
 import CustomButton from '../../components/CustomButton';
 import Header from '../../components/Header';
 
-import BackButton from '../../assets/images/icon/backIcon.png';
-import Logo from '../../assets/images/logoBW.png';
-
 const OTPScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      {/* <Header navigation={navigation} screenName='LoginScreen' /> */}
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
-          <Image
-            source={BackButton}
-            resizeMode="contain"
-            style={styles.backIcon}
-          />
-        </TouchableOpacity>
-        <Image source={Logo} resizeMode="contain" style={styles.logo} />
-      </View>
+      <Header navigation={navigation} screenName="LoginScreen" color="#000" />
       <Text style={styles.message}>
         Please enter the OTP sent to your registered mobile number
       </Text>
       <View style={styles.content}>
         <View style={styles.textInputContainer}>
           <View style={styles.inputBox}>
-          <TextInput style={styles.textInput} keyboardType='numeric' />
+            <TextInput style={styles.textInput} keyboardType="numeric" />
           </View>
           <View style={styles.inputBox}>
-          <TextInput style={styles.textInput} keyboardType='numeric' />
+            <TextInput style={styles.textInput} keyboardType="numeric" />
           </View>
           <View style={styles.inputBox}>
-          <TextInput style={styles.textInput} keyboardType='numeric' />
+            <TextInput style={styles.textInput} keyboardType="numeric" />
           </View>
           <View style={styles.inputBox}>
-          <TextInput style={styles.textInput} keyboardType='numeric' />
+            <TextInput style={styles.textInput} keyboardType="numeric" />
           </View>
-          
-          {/* <TextInput style={styles.textInput} />
-          <TextInput style={styles.textInput} />
-          <TextInput style={styles.textInput} /> */}
         </View>
         <View style={styles.timeResend}>
           <Text style={styles.time}>Expires in 00:15</Text>

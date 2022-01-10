@@ -25,7 +25,7 @@ const SignUpScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.topPart}>
-        <Header />
+        <Header navigation={navigation} screenName='LoginScreen' color="#fff" />
         <View style={styles.userImageContainer}>
           <Image source={User} resizeMode="cover" style={styles.userImage} />
         </View>

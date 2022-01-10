@@ -4,7 +4,6 @@ import styles from './style';
 
 import Header from '../../components/Header';
 
-// import Imageg from '../../assets/images/aba.png';
 import { TransparentImage } from '../../assets/images';
 import DATA from './DATA';
 

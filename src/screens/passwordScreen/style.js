@@ -6,20 +6,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingHorizontal: '5%',
   },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    maxHeight: '10%',
-    marginTop: '8%'
-  },
-  logo: {
-    width: '12%',
-  },
-  backIcon: {
-    width: 25,
-    height: 25,
-  },
   message: {
     color: '#000',
     fontSize: 25,
