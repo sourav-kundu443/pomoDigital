@@ -1,24 +1,32 @@
 import React from 'react';
-import {Image, Text, View, TextInput, ScrollView} from 'react-native';
+import {
+  Image,
+  Text,
+  View,
+  TextInput,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 
 import Header from '../../components/Header';
 import styles from './style';
 
-import CImage from '../../assets/images/construction_img.png';
-import PNameIcon from '../../assets/images/icon/p_icon_1.png';
-import PAddIcon from '../../assets/images/icon/p_icon_2.png';
-import PValueIcon from '../../assets/images/icon/p_icon_3.png';
-import PImageIcon from '../../assets/images/icon/p_icon_4.png';
-import PTimeIcon from '../../assets/images/icon/p_icon_5.png';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {
+  NewProjectImage,
+  ProjectNameIcon,
+  ProjectAddIcon,
+  ProjectValueIcon,
+  ProjectImageIcon,
+  ProjectTimeIcon,
+} from '../../assets/images';
 import CustomButton from '../../components/CustomButton';
 
 const NewProject = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header navigation={navigation} screenName='Home' color="#fff" />
       <Image
-        source={CImage}
+        source={NewProjectImage}
         resizeMode="contain"
         style={styles.constructionImage}
       />
@@ -26,30 +34,30 @@ const NewProject = ({navigation}) => {
         <Text style={styles.heading}>Create new project</Text>
         <View>
           <View style={styles.formField}>
-            <Image source={PNameIcon} style={styles.icon} />
+            <Image source={ProjectNameIcon} style={styles.icon} />
             <TextInput placeholder="Project name" style={styles.textInput} />
           </View>
           <View style={styles.formField}>
-            <Image source={PAddIcon} style={styles.icon} />
+            <Image source={ProjectAddIcon} style={styles.icon} />
             <TextInput placeholder="Project address" style={styles.textInput} />
           </View>
           <View style={styles.formField}>
-            <Image source={PValueIcon} style={styles.icon} />
+            <Image source={ProjectValueIcon} style={styles.icon} />
             <TextInput placeholder="Project value" style={styles.textInput} />
           </View>
           <View style={styles.formField}>
-            <Image source={PImageIcon} style={styles.icon} />
+            <Image source={ProjectImageIcon} style={styles.icon} />
             <TextInput placeholder="Project image" style={styles.textInput} />
           </View>
           <View style={styles.formField}>
-            <Image source={PTimeIcon} style={styles.icon} />
+            <Image source={ProjectTimeIcon} style={styles.icon} />
             <TextInput
               placeholder="Project start date"
               style={styles.textInput}
             />
           </View>
           <View style={styles.formField}>
-            <Image source={PTimeIcon} style={styles.icon} />
+            <Image source={ProjectTimeIcon} style={styles.icon} />
             <TextInput
               placeholder="Project end date"
               style={styles.textInput}
@@ -57,8 +65,7 @@ const NewProject = ({navigation}) => {
           </View>
           <TouchableOpacity
             style={styles.btn}
-            onPress={() => navigation.navigate('HomeDashboard')}
-            >
+            onPress={() => navigation.navigate('HomeDashboard')}>
             <CustomButton
               title="Continue"
               color="#F17400"

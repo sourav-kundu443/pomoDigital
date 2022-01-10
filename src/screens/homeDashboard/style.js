@@ -25,10 +25,10 @@ const styles = StyleSheet.create({
     },
     text: {
         textTransform: 'uppercase',
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: '#8C8C8C',
-        paddingHorizontal: '5%',
+        fontSize: 15,
+        color: '#333333',
+        fontWeight: '500',
+        paddingHorizontal: '2%',
         marginTop: '6%',
         letterSpacing: 1
     },

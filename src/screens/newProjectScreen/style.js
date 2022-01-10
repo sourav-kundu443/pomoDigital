@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   btn: {
-      marginBottom: '20%'
+      marginBottom: '25%'
   }
 });
 

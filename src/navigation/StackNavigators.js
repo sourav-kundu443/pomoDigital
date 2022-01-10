@@ -7,15 +7,13 @@ import HomeScreen from '../screens/homeScreen';
 import NewProject from '../screens/newProjectScreen';
 import HomeDashboard from '../screens/homeDashboard';
 import ProjectInformation from '../screens/projectInformation';
-import ProjectTimeline from '../screens/timeline';
+import ProjectMilestones from '../screens/timeline';
 import Contacts from '../screens/contacts';
 import Models from '../screens/dModels';
 import PhotosScreen from '../screens/homeScreens/PhotosScreen';
 import DocumentScreen from '../screens/homeScreens/DocumentsScreen';
 
 const Stack = createStackNavigator();
-
-
 
 const HomeStackScreen = () => {
   return (
@@ -42,7 +40,7 @@ const HomeStackScreen = () => {
       />
       <Stack.Screen
         name="Timeline"
-        component={ProjectTimeline}
+        component={ProjectMilestones}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -69,13 +67,6 @@ const HomeStackScreen = () => {
   );
 };
 
-const ProjectStackScreen = () => {
-  return (
-    <View>
-      <Text>Projects</Text>
-    </View>
-  );
-};
 const BillingStackScreen = () => {
   return (
     <View>
@@ -98,9 +89,10 @@ const ProfileStackScreen = () => {
   );
 };
 
+
+
 export {
   HomeStackScreen,
-  ProjectStackScreen,
   BillingStackScreen,
   NotificationStackScreen,
   ProfileStackScreen,

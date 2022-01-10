@@ -11,7 +11,7 @@ import ReactOne from '../../assets/images/Rectangle3.png';
 import ReactTwo from '../../assets/images/Rectangle4.png';
 
 import SearchBar from '../../components/SearchBar';
-import CustomButton from '../../components/CustomButton';
+import CustomButton from '../../components/CustomButton'; 
 
 import DATA from './DATA';
 

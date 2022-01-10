@@ -54,12 +54,12 @@ const HomeDashboard = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Header />
+      <Header navigation={navigation} screenName='NewProject' color="#fff" />
       <View style={styles.imageContainer}>
         <Image source={Office} style={styles.image} />
       </View>
       <View style={styles.footer}>
-        <Text style={styles.text}>Projects</Text>
+        <Text style={styles.text}>Multi-storey Residential Building(G+12)</Text>
         <View style={styles.cardContainer}>
           <FlatList
             data={formatData(DATA, numColumns)}

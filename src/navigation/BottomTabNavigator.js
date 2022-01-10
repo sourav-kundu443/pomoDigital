@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/Feather';
 
 import {
   HomeStackScreen,
-  ProjectStackScreen,
   BillingStackScreen,
   NotificationStackScreen,
   ProfileStackScreen,
@@ -44,21 +43,14 @@ const BottomNavigator = () => {
     <Tab.Navigator
       screenOptions={({route}) => ({
         tabBarIcon: ({color}) => screenOptions(route, color),
+        tabBarHideOnKeyboard: true,
+        tabBarLabelStyle: {fontSize: 14, fontWeight: '600'},
       })}
+      
       >
       <Tab.Screen
         name="Home"
         component={HomeStackScreen}
-      //   options={({route}) => ({
-      //     tabBarIcon: ({color}) => screenOptions(route, color),
-      //   }),
-      //   {headerShown: false}
-      // }
-        options={{headerShown: false}}
-      />
-      <Tab.Screen
-        name="Project"
-        component={ProjectStackScreen}
         options={{headerShown: false}}
       />
       <Tab.Screen

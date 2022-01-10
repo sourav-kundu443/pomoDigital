@@ -8,7 +8,7 @@ const DATA = [
     {
       id: 2,
       image: require('../../assets/images/icon/timelineIcon.png'),
-      text: 'Timeline',
+      text: 'Project Milestones',
       name: 'Timeline'
     },
     {
@@ -33,13 +33,13 @@ const DATA = [
       id: 6,
       image: require('../../assets/images/icon/documentsIcon.png'),
       text: 'Documents',
-      name: 'Documents'
+      name: 'DocumentScreen'
     },
     {
       id: 7,
       image: require('../../assets/images/icon/photosIcon.png'),
       text: 'Photos',
-      name: 'Photos'
+      name: 'PhotosScreen'
     }
   ];
 
