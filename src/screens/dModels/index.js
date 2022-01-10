@@ -3,11 +3,7 @@ import {View, Text, Image} from 'react-native';
 import Header from '../../components/Header';
 import styles from './style';
 
-import ConstructionImage from '../../assets/images/cnstruction.png';
-import PlusIcon from '../../assets/images/icon/plusIcon.png';
-import MinusIcon from '../../assets/images/icon/minusIcon.png';
-import DotIcon from '../../assets/images/icon/dot.png';
-import SelectIcon from '../../assets/images/icon/select.png';
+import {ConstructionImage, PlusIcon, MinusIcon, DotIcon, SelectIcon} from '../../assets/images';
 
 const Models = () => {
   const {

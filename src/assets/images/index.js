@@ -1,0 +1,13 @@
+export const DocumentImage = require('./doc.png'); 
+export const ContactTopImage = require('./img4.png'); 
+export const ConstructionImage = require('./cnstruction.png'); 
+export const TransparentImage = require('./aba.png');
+export const OrganizationIcon = require('./icon/building.png'); 
+export const ScannerIcon = require('./icon/scanner.png'); 
+export const GlobeIcon = require('./icon/globe.png'); 
+export const DisciplineIcon = require('./icon/discipline.png'); 
+export const DownArrowIcon = require('./icon/down_arrow.png'); 
+export const PlusIcon = require('./icon/plusIcon.png'); 
+export const MinusIcon = require('./icon/minusIcon.png'); 
+export const DotIcon = require('./icon/dot.png'); 
+export const SelectIcon = require('./icon/select.png'); 

@@ -4,14 +4,8 @@ import {View, Text, Image, TouchableOpacity, Button} from 'react-native';
 import styles from './style';
 
 import Header from '../../components/Header';
-// import DisciplineModal from '../../components/DisciplineModal';
 
-import Imageg from '../../assets/images/img4.png';
-import OrganizationIcon from '../../assets/images/icon/building.png';
-import ScannerIcon from '../../assets/images/icon/scanner.png';
-import GlobeIcon from '../../assets/images/icon/globe.png';
-import DisciplineIcon from '../../assets/images/icon/discipline.png';
-import DownArrowIcon from '../../assets/images/icon/down_arrow.png';
+import { ContactTopImage, OrganizationIcon, ScannerIcon, GlobeIcon, DisciplineIcon, DownArrowIcon } from '../../assets/images';
 
 const Contacts = () => {
   const [isModalVisible, setModalVisible] = useState(true);
@@ -22,7 +16,7 @@ const Contacts = () => {
   return (
     <View style={styles.container}>
       <Header />
-      <Image source={Imageg} style={styles.image} resizeMode="contain" />
+      <Image source={ContactTopImage} style={styles.image} resizeMode="contain" />
       <View style={styles.footer}>
         <Text style={styles.footerTitle}>Contact</Text>
 

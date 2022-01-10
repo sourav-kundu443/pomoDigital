@@ -4,7 +4,8 @@ import styles from './style';
 
 import Header from '../../components/Header';
 
-import Imageg from '../../assets/images/aba.png';
+// import Imageg from '../../assets/images/aba.png';
+import { TransparentImage } from '../../assets/images';
 import DATA from './DATA';
 
 const ProjectInfo = () => {
@@ -23,7 +24,7 @@ const ProjectInfo = () => {
   return (
     <View style={styles.container}>
       <Header />
-      <Image source={Imageg} style={styles.image} resizeMode="contain" />
+      <Image source={TransparentImage} style={styles.image} resizeMode="contain" />
       <View style={styles.footer}>
         <Text style={styles.footerTitle}>Projects Information</Text>
 
